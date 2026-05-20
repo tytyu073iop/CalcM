@@ -8,7 +8,7 @@
     <string name="quarterly">Ежеквартально</string>
     <string name="annually">Ежегодно</string>
     <string name="calculate">Рассчитать</string>
-    <string name="final_amount">Конечная сумма: %s</string>
-    <string name="total_profit">Общая прибыль: %s</string>
+    <string name="final_amount">Конечная сумма</string>
+    <string name="total_profit">Общая прибыль</string>
     <string name="error_invalid_input">Некорректный ввод</string>
 </resources>

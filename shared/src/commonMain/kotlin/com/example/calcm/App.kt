@@ -101,8 +101,8 @@ fun App() {
                 result?.let { res ->
                     Card(modifier = Modifier.fillMaxWidth()) {
                         Column(modifier = Modifier.padding(16.dp)) {
-                            Text(stringResource(Res.string.final_amount, res.finalAmount.toFixed(2)))
-                            Text(stringResource(Res.string.total_profit, res.totalProfit.toFixed(2)))
+                            Text("${stringResource(Res.string.final_amount)}: ${res.finalAmount.toFixed(2)}")
+                            Text("${stringResource(Res.string.total_profit)}: ${res.totalProfit.toFixed(2)}")
                         }
                     }
                     
@@ -118,5 +118,14 @@ fun App() {
 
 fun Double.toFixed(digits: Int): String {
     val factor = 10.0.pow(digits)
-    return ((this * factor).toLong() / factor).toString()
+    val rounded = (this * factor).toLong() / factor
+    val s = rounded.toString()
+    if (digits > 0 && !s.contains(".")) {
+        return s + "." + "0".repeat(digits)
+    }
+    val parts = s.split(".")
+    if (parts.size == 2 && parts[1].length < digits) {
+        return s + "0".repeat(digits - parts[1].length)
+    }
+    return s
 }

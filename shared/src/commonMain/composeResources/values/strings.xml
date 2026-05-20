@@ -8,7 +8,7 @@
     <string name="quarterly">Quarterly</string>
     <string name="annually">Annually</string>
     <string name="calculate">Calculate</string>
-    <string name="final_amount">Final Amount: %s</string>
-    <string name="total_profit">Total Profit: %s</string>
+    <string name="final_amount">Final Amount</string>
+    <string name="total_profit">Total Profit</string>
     <string name="error_invalid_input">Invalid input</string>
 </resources>
