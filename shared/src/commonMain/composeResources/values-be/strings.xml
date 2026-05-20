@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Фінансавы калькулятар</string>
+    <string name="initial_sum">Пачатковая сума</string>
+    <string name="annual_rate">Гадавая працэнтная стаўка (%)</string>
+    <string name="years">Тэрмін (гадоў)</string>
+    <string name="capitalization">Капіталізацыя</string>
+    <string name="monthly">Штомесяц</string>
+    <string name="quarterly">Штоквартальна</string>
+    <string name="annually">Штогод</string>
+    <string name="calculate">Разлічыць</string>
+    <string name="final_amount">Канчатковая сума: %s</string>
+    <string name="total_profit">Агульны прыбытак: %s</string>
+    <string name="error_invalid_input">Некарэктны ўвод</string>
+</resources>
